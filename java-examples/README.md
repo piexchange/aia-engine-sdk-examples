@@ -1,6 +1,6 @@
 # AIA Engine Java SDK Examples
 
-## Authentication the SDK Client
+## Authentication
 
 There are two ways to authenticate the **Client**:
 
@@ -45,7 +45,6 @@ dataset.appendData("data/breast_cancer_augumented_data.csv");
 
 ```Java
 Model model = new Model(client, "<model_id>");
-    String result = model.predict("data/breast_cancer_prediction_data.csv", "text/csv");
-    System.out.print(String.format("Prediction result:\n%s", result));
-}
+String result = model.predict("data/breast_cancer_prediction_data.csv", "text/csv");
+System.out.print(String.format("Prediction result:\n%s", result));
 ```

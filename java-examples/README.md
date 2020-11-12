@@ -1,5 +1,18 @@
 # AIA Engine Java SDK Examples
 
+## The SDK
+The SDK can be founded in the **libs** folder. This SDK requires the following dependencies:
+
+```Grovy
+dependencies {
+    compile 'io.grpc:grpc-netty-shaded:1.25.0'
+    compile 'io.grpc:grpc-protobuf:1.25.0'
+    compile 'io.grpc:grpc-stub:1.25.0'
+    compile 'io.grpc:grpc-auth:1.25.0'
+    compile 'com.google.auth:google-auth-library-oauth2-http:0.18.0'
+}
+```
+
 ## Authentication
 
 There are two ways to authenticate the **Client**:
@@ -34,14 +47,15 @@ There are two ways to authenticate the **Client**:
     }
     ```
 
-## How to incrementally adding new data to the existing dataset
+## How to add new data to the existing dataset
+*Note: This will trigger the training process if this dataset is used to train the model with 'Continuous Learning' enabled.*
 
 ```Java
 Dataset dataset = new Dataset(client, "<dataset_id>");
 dataset.appendData("data/breast_cancer_augumented_data.csv");
 ```
 
-## How to run predictions
+## How to run prediction
 
 ```Java
 Model model = new Model(client, "<model_id>");

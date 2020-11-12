@@ -1,0 +1,8 @@
+Id,Cl_thickness,Cell_size,Cell_shape,Marg_adhesion,Epith_c_size,Bare_nuclei,Bl_cromatin,Normal_nucleoli,Mitoses,Class
+1000025,5,1,1,1,2,1,3,1,1,benign
+1017122,8,10,10,8,7,10,9,7,1,malignant
+1018099,1,1,1,1,2,10,3,1,1,benign
+1041801,5,3,3,3,2,3,4,4,1,malignant
+1043999,1,1,1,1,2,3,3,1,1,benign
+1044572,8,7,5,10,7,9,5,5,4,malignant
+1047630,7,4,6,4,6,1,4,3,1,malignant

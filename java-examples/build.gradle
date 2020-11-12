@@ -1,0 +1,24 @@
+group 'example'
+version '1.0.0'
+
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'io.grpc:grpc-netty-shaded:1.25.0'
+    compile 'io.grpc:grpc-protobuf:1.25.0'
+    compile 'io.grpc:grpc-stub:1.25.0'
+    compile 'io.grpc:grpc-auth:1.25.0'
+    compile 'com.google.auth:google-auth-library-oauth2-http:0.18.0'
+
+    compile files('libs/aiaengine-sdk-0.4.2.jar')
+}
+
+application {
+    mainClassName = 'com.example.App' 
+}

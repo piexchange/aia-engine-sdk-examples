@@ -16,7 +16,7 @@ dependencies {
     compile 'io.grpc:grpc-auth:1.25.0'
     compile 'com.google.auth:google-auth-library-oauth2-http:0.18.0'
 
-    compile files('libs/aiaengine-sdk-0.4.2.jar')
+    compile files('libs/aiaengine-sdk-0.4.3.jar')
 }
 
 application {

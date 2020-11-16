@@ -46,7 +46,7 @@ public class App {
     // add new data to existing dataset. This will automatically trigger the retraining process
     private static void addNewDataToDataset(Client client) throws Exception {
         Dataset dataset = new Dataset(client, "<dataset_id>");
-        dataset.appendData("data/breast_cancer_augumented_data.csv");
+        dataset.appendData("text/csv", "data/breast_cancer_augumented_data.csv");
     }
     
     // run prediction
